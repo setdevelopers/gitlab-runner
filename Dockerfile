@@ -47,7 +47,7 @@ RUN pip install azure-cli==2.65.0 --no-cache-dir --ignore-installed && \
     pip install --force-reinstall -v "azure-mgmt-rdbms==10.2.0b17" --ignore-installed
 
 # Install docker
-ARG DOCKER_VERSION="27.3.1"
+ARG DOCKER_VERSION="20.10.20"
 
 RUN curl --silent --proto '=https' --tlsv1.2 -fOL https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VERSION}.tgz && \
     tar -xzf docker-${DOCKER_VERSION}.tgz -C /tmp && \
